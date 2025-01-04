@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Generate Opportunity PDF" icon-name="custom:custom63">
+        <lightning-button
+            label="Generate PDF"
+            onclick={handleGeneratePDF}
+            class="slds-m-bottom_medium">
+        </lightning-button>
+        <template if:true={pdfContent}>
+            <p>{pdfContent}</p>
+        </template>
+        <template if:true={error}>
+            <p style="color:red;">{error}</p>
+        </template>
+    </lightning-card>
+</template>

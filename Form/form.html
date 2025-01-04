@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avenir TELECOM - Contact Form</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Import Roboto font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="form-container">
+        <img src="logo.png" alt="Avenir Telecom Logo" class="logo">
+        <!-- Web-to-Lead Form -->
+        <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+            <!-- Organization ID -->
+            <input type="hidden" name="oid" value="00Dd20000050oEs">
+            <!-- Return URL -->
+            <input type="hidden" name="retURL" value="http://www.avenir-telecom.com/form">
+
+            <!-- First Name -->
+            <div class="form-row">
+                <label for="first_name">First Name:</label>
+                <input id="first_name" maxlength="40" name="first_name" type="text" required>
+            </div>
+
+            <!-- Last Name -->
+            <div class="form-row">
+                <label for="last_name">Last Name:</label>
+                <input id="last_name" maxlength="80" name="last_name" type="text" required>
+            </div>
+
+            <!-- Email -->
+            <div class="form-row">
+                <label for="email">Email:</label>
+                <input id="email" maxlength="80" name="email" type="email" required>
+            </div>
+
+            <!-- Phone -->
+            <div class="form-row">
+                <label for="phone">Phone:</label>
+                <input id="phone" maxlength="40" name="phone" type="tel">
+            </div>
+
+            <!-- Company -->
+            <div class="form-row">
+                <label for="company">Company:</label>
+                <input id="company" maxlength="40" name="company" type="text" required>
+            </div>
+
+            <!-- Offer -->
+            <div class="form-row">
+                <label for="offer">Offer:</label>
+                <input id="offer" maxlength="100" name="00Nd2000004Ns67" type="text">
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
